@@ -6,3 +6,10 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+ul,
+ol,
+a {
+  list-style: none;
+  text-decoration: none;
+}

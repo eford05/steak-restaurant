@@ -1,0 +1,68 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  background-color: #000;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+}
+
+.logo {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.logo-container {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.logo-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+a.nav-link {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+a.nav-link:hover,
+a.nav-link:active {
+  border-bottom: 2px solid #fff;
+}
+
+.contact-info {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.li-login {
+  width: 8rem;
+  text-align: center;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+
+.shop-icon {
+  font-size: 2rem;
+}

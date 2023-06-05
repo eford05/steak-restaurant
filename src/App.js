@@ -4,6 +4,7 @@ import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/home/Home";
 import Menu from "./pages/menu/Menu";
+import Login from "./pages/login/Login";
 import Waitlist from "./pages/waitlist/Waitlist";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
@@ -35,6 +36,10 @@ function App() {
         {
           path: "/wait",
           element: <Waitlist />,
+        },
+        {
+          path: "/login",
+          element: <Login />,
         },
       ],
     },
