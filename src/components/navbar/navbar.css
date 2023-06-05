@@ -1,9 +1,22 @@
 .navbar {
-  width: 100%;
+  position: relative;
+  z-index: 5;
+  width: 100vw;
+  height: 20vh;
   display: flex;
   background-color: #000;
   justify-content: space-between;
-  padding: 2rem 1rem;
+  padding: 0 1rem;
+}
+
+.toggle {
+  display: none;
+}
+
+.toggle-icon {
+  display: none;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .logo {
@@ -48,6 +61,12 @@ a.nav-link:active {
   width: fit-content;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+.link-marker {
+  font-size: 2rem;
+  display: none;
 }
 
 .login-container {
@@ -65,4 +84,66 @@ a.nav-link:active {
 
 .shop-icon {
   font-size: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .toggle {
+    display: block;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .toggle-icon {
+    display: block;
+    color: #fff;
+  }
+
+  .nav-list-active {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 80vh;
+    background-color: #222;
+    top: 20vh;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 2rem;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  a.nav-link {
+    font-size: 2rem;
+  }
+
+  .address-link {
+    display: none;
+  }
+
+  .login-container {
+    gap: 0.2rem;
+  }
+
+  .link-marker {
+    display: block;
+  }
+
+  .li-login {
+    width: fit-content;
+  }
+
+  .li-login .nav-link {
+    display: none;
+  }
+
+  .li-icon {
+    width: fit-content;
+  }
 }

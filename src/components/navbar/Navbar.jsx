@@ -1,24 +1,39 @@
-import React from "react";
+import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import { HiOutlineShoppingBag } from "react-icons/hi";
+import {
+  HiOutlineShoppingBag,
+  HiOutlineMenuAlt1,
+  HiOutlineX,
+  HiOutlineLocationMarker,
+} from "react-icons/hi";
 import "./navbar.css";
 
 function Navbar() {
+  const [navActive, setNavActive] = useState(true);
   return (
     <NavLink className="navbar">
+      <button className="toggle" onClick={() => setNavActive(!navActive)}>
+        {navActive ? (
+          <HiOutlineMenuAlt1 className="toggle-icon" />
+        ) : (
+          <HiOutlineX className="toggle-icon" />
+        )}
+      </button>
       <div className="logo-container">
         <figure className="logo-fig">
-          <img
-            className="logo"
-            src={require("../../images/longhorn-kittl.png")}
-            alt="Longhorn Logo"
-          />
+          <Link to="/">
+            <img
+              className="logo"
+              src={require("../../images/longhorn-kittl.png")}
+              alt="Longhorn Logo"
+            />
+          </Link>
         </figure>
         <h2 className="logo-title">
           <Link to="/">Steakhouse</Link>
         </h2>
       </div>
-      <ul className="nav-list">
+      <ul className={!navActive ? "nav-list-active" : "nav-list"}>
         <li>
           <Link className="nav-link" to="/menu">
             Order Now
@@ -42,6 +57,9 @@ function Navbar() {
         </Link>
       </div>
       <ul className="login-container">
+        <li>
+          <HiOutlineLocationMarker className="link-marker" />
+        </li>
         <li className="li-login">
           <Link className="nav-link" to="/login">
             Log In
