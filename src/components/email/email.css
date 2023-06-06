@@ -1,0 +1,84 @@
+.eclub {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.eclub-slogan {
+  font-family: "Playfair Display SC", serif;
+  font-size: clamp(30px, 5vh + 1rem, 60px);
+}
+
+.eclub-sub-container {
+  width: 60%;
+  padding: 1rem;
+}
+
+.eclub-subtitle {
+  color: #fff;
+  font-size: clamp(15px, 3vh + 1rem, 25px);
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.eclub-form {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.eclub-input-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.label1,
+.label2 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.eclub-input {
+  width: 100%;
+  height: 4rem;
+  border: 1px solid #800;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+}
+
+.eclub-input:focus,
+.eclub-input:active {
+  border-color: none;
+  box-shadow: none;
+  outline: 0;
+}
+
+.eclub-submit {
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: #800;
+  height: 4rem;
+  padding: 0 2rem;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .eclub-form {
+    flex-direction: column;
+  }
+
+  .eclub-label {
+    display: none;
+  }
+}
