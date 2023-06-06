@@ -1,3 +1,4 @@
+import React, { Fragment } from "react";
 import "./App.css";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
@@ -11,12 +12,12 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 function App() {
   const Layout = () => {
     return (
-      <main>
+      <Fragment>
         <Navbar />
         <Header />
         <Outlet />
         <Footer />
-      </main>
+      </Fragment>
     );
   };
 
@@ -30,20 +31,21 @@ function App() {
           element: <Home />,
         },
         {
-          path: "/menu",
-          element: <Menu />,
-        },
-        {
           path: "/wait",
           element: <Waitlist />,
         },
-        {
-          path: "/login",
-          element: <Login />,
-        },
       ],
     },
+    {
+      path: "/menu",
+      element: <Menu />,
+    },
+    {
+      path: "/login",
+      element: <Login />,
+    },
   ]);
+
   return (
     <div className="App">
       <RouterProvider router={router} />
