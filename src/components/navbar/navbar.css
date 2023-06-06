@@ -87,6 +87,10 @@ a.nav-link:active {
 }
 
 @media screen and (max-width: 900px) {
+  .logo-container {
+    padding-left: clamp(15px, 4vw + 1rem, 40px);
+  }
+
   .toggle {
     display: block;
     background-color: transparent;
