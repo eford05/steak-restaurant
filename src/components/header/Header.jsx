@@ -16,9 +16,11 @@ function Header() {
         <h2>Take a Break, Eat</h2>
         <h1>Steak</h1>
       </div>
-      <button className="hero-btn">
-        <Link to="/menu">Order Now</Link>
-      </button>
+      <div className="hero-btn-container">
+        <button className="hero-btn">
+          <Link to="/menu">Order Now</Link>
+        </button>
+      </div>
     </header>
   );
 }
