@@ -65,7 +65,7 @@ function Navbar() {
             Log In
           </Link>
         </li>
-        <li>
+        <li className="shop-li">
           <HiOutlineShoppingBag className="shop-icon" />
         </li>
       </ul>
