@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
   HiOutlineShoppingBag,
   HiOutlineMenuAlt1,
@@ -11,7 +11,7 @@ import "./navbar.css";
 function Navbar() {
   const [navActive, setNavActive] = useState(true);
   return (
-    <NavLink className="navbar">
+    <nav className="navbar">
       <button className="toggle" onClick={() => setNavActive(!navActive)}>
         {navActive ? (
           <HiOutlineMenuAlt1 className="toggle-icon" />
@@ -21,55 +21,55 @@ function Navbar() {
       </button>
       <div className="logo-container">
         <figure className="logo-fig">
-          <Link to="/">
+          <NavLink to="/">
             <img
               className="logo"
               src={require("../../images/longhorn-kittl.png")}
               alt="Longhorn Logo"
             />
-          </Link>
+          </NavLink>
         </figure>
         <h2 className="logo-title">
-          <Link to="/">Steakhouse</Link>
+          <NavLink to="/">Steakhouse</NavLink>
         </h2>
       </div>
       <ul className={!navActive ? "nav-list-active" : "nav-list"}>
         <li>
-          <Link className="nav-link" to="/menu">
+          <NavLink className="nav-link" to="/menu">
             Order Now
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className="nav-link" to="/menu">
+          <NavLink className="nav-link" to="/menu">
             Menu
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className="nav-link" to="/wait">
+          <NavLink className="nav-link" to="/wait">
             Join Waitlist
-          </Link>
+          </NavLink>
         </li>
       </ul>
       <div className="contact-info">
-        <Link className="contact-link">
+        <NavLink className="contact-link">
           <p className="address-link">United States</p>
           <p className="address-link">(000)000-0000</p>
-        </Link>
+        </NavLink>
       </div>
       <ul className="login-container">
         <li>
           <HiOutlineLocationMarker className="link-marker" />
         </li>
         <li className="li-login">
-          <Link className="nav-link" to="/login">
+          <NavLink className="nav-link" to="/login">
             Log In
-          </Link>
+          </NavLink>
         </li>
         <li className="shop-li">
           <HiOutlineShoppingBag className="shop-icon" />
         </li>
       </ul>
-    </NavLink>
+    </nav>
   );
 }
 
