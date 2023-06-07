@@ -8,7 +8,7 @@ function Home() {
     <main className="home">
       <div className="background-texture"></div>
       <Email topTag="Love Steak?" bottomTag="Become a VIP" />
-      <div className="featured">
+      <section className="featured">
         <FeatureCard
           tagline="Sizzling Steak"
           image="https://images.unsplash.com/photo-1583953623787-ada99d338235?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80"
@@ -27,7 +27,7 @@ function Home() {
           path="/wait"
           btnTitle="Reserve"
         />
-      </div>
+      </section>
     </main>
   );
 }

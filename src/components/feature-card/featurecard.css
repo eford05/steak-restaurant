@@ -20,8 +20,8 @@
     rgba(0, 0, 0, 0.1)
   );
   color: #fff;
-  width: 22rem;
-  font-size: 3rem;
+  width: clamp(8rem, 35vw + 2rem, 24rem);
+  font-size: clamp(1.4rem, 4vw + 8px, 3rem);
   text-shadow: 1px 1px 1px (0, 0, 0, 0.5);
   top: 1rem;
   left: 1rem;
@@ -29,8 +29,8 @@
 }
 
 .feature-fig {
-  width: 22rem;
-  height: 24rem;
+  width: clamp(8rem, 35vw + 2rem, 24rem);
+  height: clamp(8rem, 35vw + 2rem, 24rem);
 }
 
 .feature-img {
@@ -55,4 +55,15 @@
 .feature-btn:active {
   cursor: pointer;
   background-color: #900;
+}
+
+@media screen and (max-width: 900px) {
+  .tagline {
+    width: clamp(20rem, 50vw + 2rem, 40rem);
+  }
+
+  .feature-fig {
+    width: clamp(20rem, 50vw + 2rem, 40rem);
+    height: clamp(20rem, 50vw + 2rem, 40rem);
+  }
 }
