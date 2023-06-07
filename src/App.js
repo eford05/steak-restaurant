@@ -21,6 +21,16 @@ function App() {
     );
   };
 
+  const BasicDash = () => {
+    return (
+      <Fragment>
+        <Navbar />
+        <Outlet />
+        <Footer />
+      </Fragment>
+    );
+  };
+
   const router = createBrowserRouter([
     {
       path: "/",
@@ -38,11 +48,23 @@ function App() {
     },
     {
       path: "/menu",
-      element: <Menu />,
+      element: <BasicDash />,
+      children: [
+        {
+          path: "/menu",
+          element: <Menu />,
+        },
+      ],
     },
     {
       path: "/login",
-      element: <Login />,
+      element: <BasicDash />,
+      children: [
+        {
+          path: "/login",
+          element: <Login />,
+        },
+      ],
     },
   ]);
 

@@ -1,8 +1,8 @@
-import React from "react";
+import { Fragment } from "react";
 import "./menu.css";
 
 function Menu() {
-  return <div>Menu</div>;
+  return <Fragment></Fragment>;
 }
 
 export default Menu;
