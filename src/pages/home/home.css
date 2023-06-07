@@ -1,4 +1,24 @@
 .home {
   width: 100%;
   margin-top: 10rem;
+  position: relative;
+}
+
+.background-texture {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-image: url("https://images.pexels.com/photos/7599590/pexels-photo-7599590.jpeg");
+  background-color: #bfb4a7;
+  top: 2rem;
+  left: 0;
+}
+
+.featured {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 0 1rem;
 }

@@ -1,0 +1,58 @@
+.feature-card {
+  width: fit-content;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  padding-bottom: 3rem;
+  border-radius: 0.2rem;
+  gap: 3rem;
+}
+
+.tagline {
+  position: absolute;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.1)
+  );
+  color: #fff;
+  width: 22rem;
+  font-size: 3rem;
+  text-shadow: 1px 1px 1px (0, 0, 0, 0.5);
+  top: 1rem;
+  left: 1rem;
+  text-align: center;
+}
+
+.feature-fig {
+  width: 22rem;
+  height: 24rem;
+}
+
+.feature-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.feature-btn {
+  width: fit-content;
+  background-color: #800;
+  font-size: 2.5rem;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  transition: 1s ease-out;
+}
+
+.feature-btn:hover,
+.feature-btn:active {
+  cursor: pointer;
+  background-color: #900;
+}
