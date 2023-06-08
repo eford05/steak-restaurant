@@ -2,6 +2,7 @@ import React from "react";
 import Email from "../../components/email/Email";
 import FeatureCard from "../../components/feature-card/FeatureCard";
 import "./home.css";
+import Offers from "../../components/offers/Offers";
 
 function Home() {
   return (
@@ -26,6 +27,33 @@ function Home() {
           image="https://images.unsplash.com/photo-1599458253959-5d2d95a60397?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
           path="/wait"
           btnTitle="Reserve"
+        />
+      </section>
+      <section className="offers">
+        <Offers
+          img="GiftCard.png"
+          alt="gift card"
+          title="Gift Cards"
+          desc="Give a gift card to someone special."
+          path="/"
+          link="Go to gift cards"
+        />
+        <Offers
+          img="LonghornCell.png"
+          alt="Cell phone"
+          title="Keep in touch"
+          desc="Get text notifications with news, updates, and special offers"
+          path="/"
+          link="Sign up"
+        />
+
+        <Offers
+          img="Cell.png"
+          alt="cell phone"
+          title="Discover our app"
+          desc="Deals and delicious steaks just a tap away."
+          path="/"
+          link="App store"
         />
       </section>
     </main>
