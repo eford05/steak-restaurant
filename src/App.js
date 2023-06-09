@@ -40,10 +40,6 @@ function App() {
           path: "/",
           element: <Home />,
         },
-        {
-          path: "/wait",
-          element: <Waitlist />,
-        },
       ],
     },
     {
@@ -63,6 +59,16 @@ function App() {
         {
           path: "/login",
           element: <Login />,
+        },
+      ],
+    },
+    {
+      path: "/wait",
+      element: <Waitlist />,
+      children: [
+        {
+          path: "/wait",
+          element: <Waitlist />,
         },
       ],
     },
