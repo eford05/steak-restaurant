@@ -24,7 +24,7 @@ function Navbar() {
           <NavLink to="/">
             <img
               className="logo"
-              src={require("../../images/longhorn-kittl.png")}
+              src={require("../../images/BullLogo.png")}
               alt="Longhorn Logo"
             />
           </NavLink>

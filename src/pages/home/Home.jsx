@@ -39,7 +39,7 @@ function Home() {
           link="Go to gift cards"
         />
         <Offers
-          img="LonghornCell.png"
+          img="Steak.png"
           alt="Cell phone"
           title="Keep in touch"
           desc="Get text notifications with news, updates, and special offers"
