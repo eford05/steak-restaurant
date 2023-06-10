@@ -7,8 +7,11 @@ import Offers from "../../components/offers/Offers";
 function Home() {
   return (
     <main className="home">
-      <div className="background-texture"></div>
-      <Email topTag="Love Steak?" bottomTag="Become a VIP" />
+      <h1 className="home-title">Quality Beef</h1>
+      <figure className="cow-fig">
+        <img className="cow-img" src={require("../../images/cow.png")} alt="" />
+      </figure>
+      <Email topTag="Love Steak?" bottomTag="Become a VIP" className="eclub" />
       <section className="featured">
         <FeatureCard
           tagline="Sizzling Steak"

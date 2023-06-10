@@ -23,13 +23,13 @@ footer {
 
 .footer-li:hover,
 .footer-active {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #fff;
 }
 
 .footer-link {
   font-size: 1.4rem;
   font-weight: 600;
-  color: #000;
+  color: #fff;
 }
 
 .footer-social {
@@ -53,6 +53,7 @@ footer {
 .social-desc,
 .social-icon {
   font-size: 1.4rem;
+  color: #fff;
 }
 
 .social-icon {
@@ -71,4 +72,26 @@ footer {
 
 .social-icon:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-list {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer-list {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+  }
 }
