@@ -64,7 +64,7 @@ function App() {
     },
     {
       path: "/wait",
-      element: <Waitlist />,
+      element: <BasicDash />,
       children: [
         {
           path: "/wait",
