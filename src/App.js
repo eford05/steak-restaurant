@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
+import About from "./pages/about/About";
 import Home from "./pages/home/Home";
 import Menu from "./pages/menu/Menu";
 import Login from "./pages/login/Login";
@@ -40,32 +41,24 @@ function App() {
           path: "/",
           element: <Home />,
         },
+        {
+          path: "/about",
+          element: <About />,
+        },
       ],
     },
     {
-      path: "/menu",
+      path: "/",
       element: <BasicDash />,
       children: [
         {
           path: "/menu",
           element: <Menu />,
         },
-      ],
-    },
-    {
-      path: "/login",
-      element: <BasicDash />,
-      children: [
         {
           path: "/login",
           element: <Login />,
         },
-      ],
-    },
-    {
-      path: "/wait",
-      element: <BasicDash />,
-      children: [
         {
           path: "/wait",
           element: <Waitlist />,

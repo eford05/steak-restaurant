@@ -8,7 +8,7 @@ function Footer() {
     <footer>
       <ul className="footer-list">
         <li className="footer-li">
-          <Link className="footer-link" to="/">
+          <Link className="footer-link" to="/about">
             About
           </Link>
         </li>

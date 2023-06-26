@@ -1,0 +1,83 @@
+.reserve {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wait-title {
+  font-family: "Fredericka the Great", cursive;
+  font-size: clamp(4rem, 4vw + 1rem, 6rem);
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+}
+
+.wait-details {
+  font-size: clamp(1.6rem, 1vw + 1rem, 3rem);
+  color: #800;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.wait-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  margin-top: 2rem;
+}
+
+.wait-input {
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #800;
+}
+
+.wait-input:focus {
+  outline: none;
+  border: 1px solid #800;
+}
+
+.wait-tel-message {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.wait-btn {
+  font-size: 2rem;
+  color: #fff;
+  background-color: #800;
+  width: 30%;
+  text-transform: uppercase;
+  text-align: center;
+  align-self: center;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.25rem 0;
+  transition: 1s ease-out;
+  margin-top: 0.5rem;
+}
+
+.wait-btn:hover {
+  background-color: #900;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .wait-form {
+    width: 80%;
+  }
+  .wait-btn {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wait-btn {
+    width: 100%;
+  }
+}
