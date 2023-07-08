@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/steak-restaurant/static/css/main.50a0e088.css",
+    "main.js": "/steak-restaurant/static/js/main.13ded605.js",
+    "static/media/cow.png": "/steak-restaurant/static/media/cow.72a219ad86ba884a99e7.png",
+    "static/media/hitesh-dewasi-F-wom_-3mZY-unsplash.jpg": "/steak-restaurant/static/media/hitesh-dewasi-F-wom_-3mZY-unsplash.7c74dc73ebbdbfdaac81.jpg",
+    "static/media/Steak.png": "/steak-restaurant/static/media/Steak.56e4aa1131e12cb1ce50.png",
+    "static/media/GiftCard.png": "/steak-restaurant/static/media/GiftCard.926d803f0402e79869a8.png",
+    "static/media/BullLogo.png": "/steak-restaurant/static/media/BullLogo.13c30dfee2dca0fb5e1e.png",
+    "static/media/Cell.png": "/steak-restaurant/static/media/Cell.57619b1fafb15635fde2.png",
+    "index.html": "/steak-restaurant/index.html",
+    "main.50a0e088.css.map": "/steak-restaurant/static/css/main.50a0e088.css.map",
+    "main.13ded605.js.map": "/steak-restaurant/static/js/main.13ded605.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.50a0e088.css",
+    "static/js/main.13ded605.js"
+  ]
+}
